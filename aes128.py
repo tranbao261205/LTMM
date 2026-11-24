@@ -88,36 +88,36 @@ def show(log, label, state):
     for r in range(4):
         log('    ' + ' '.join(f'{state[4*c+r]:02X}' for c in range(4)))
 
-# def crypt(block, key, decrypt=False, log=lambda _: None):
-#     if len(block) != 16 or len(key) != 16:
-#         raise ValueError('AES-128 requires a 16-byte block and key')
-#     log(f'AES-128 {"DECRYPT" if decrypt else "ENCRYPT"}: input={hx(block)}, key={hx(key)}')
-#     keys = key_expansion(key, log)
-#     state = list(block)
-#     show(log, 'Input', state)
-#     if not decrypt:
-#         log('Round 00')
-#         state = add_round_key(state, keys[0]); show(log,'AddRoundKey',state)
-#         for i in range(1,11):
-#             log(f'Round {i:02d}')
-#             state = sub_bytes(state); show(log,'SubBytes',state)
-#             state = shift_rows(state); show(log,'ShiftRows',state)
-#             if i != 10:
-#                 state = mix_columns(state); show(log,'MixColumns',state)
-#             else:
-#                 log('MixColumns skipped in final round')
-#             state = add_round_key(state, keys[i]); show(log,'AddRoundKey',state)
-#     else:
-#         log('Inverse initial round: key 10')
-#         state = add_round_key(state, keys[10]); show(log,'AddRoundKey',state)
-#         for i in range(9,-1,-1):
-#             log(f'Inverse round: key {i:02d}')
-#             state = shift_rows(state, True); show(log,'InvShiftRows',state)
-#             state = sub_bytes(state, True); show(log,'InvSubBytes',state)
-#             state = add_round_key(state, keys[i]); show(log,'AddRoundKey',state)
-#             if i != 0:
-#                 state = mix_columns(state, True); show(log,'InvMixColumns',state)
-#             else:
-#                 log('InvMixColumns skipped in final inverse round')
-#     show(log,'Output',state)
-#     return bytes(state)
+def crypt(block, key, decrypt=False, log=lambda _: None):
+    if len(block) != 16 or len(key) != 16:
+        raise ValueError('AES-128 requires a 16-byte block and key')
+    log(f'AES-128 {"DECRYPT" if decrypt else "ENCRYPT"}: input={hx(block)}, key={hx(key)}')
+    keys = key_expansion(key, log)
+    state = list(block)
+    show(log, 'Input', state)
+    if not decrypt:
+        log('Round 00')
+        state = add_round_key(state, keys[0]); show(log,'AddRoundKey',state)
+        for i in range(1,11):
+            log(f'Round {i:02d}')
+            state = sub_bytes(state); show(log,'SubBytes',state)
+            state = shift_rows(state); show(log,'ShiftRows',state)
+            if i != 10:
+                state = mix_columns(state); show(log,'MixColumns',state)
+            else:
+                log('MixColumns skipped in final round')
+            state = add_round_key(state, keys[i]); show(log,'AddRoundKey',state)
+    else:
+        log('Inverse initial round: key 10')
+        state = add_round_key(state, keys[10]); show(log,'AddRoundKey',state)
+        for i in range(9,-1,-1):
+            log(f'Inverse round: key {i:02d}')
+            state = shift_rows(state, True); show(log,'InvShiftRows',state)
+            state = sub_bytes(state, True); show(log,'InvSubBytes',state)
+            state = add_round_key(state, keys[i]); show(log,'AddRoundKey',state)
+            if i != 0:
+                state = mix_columns(state, True); show(log,'InvMixColumns',state)
+            else:
+                log('InvMixColumns skipped in final inverse round')
+    show(log,'Output',state)
+    return bytes(state)
