@@ -1,0 +1,11 @@
+test_aes_primitives (test_algorithms.TestAlgorithms.test_aes_primitives) ... ok
+test_aes_round_1 (test_algorithms.TestAlgorithms.test_aes_round_1) ... ok
+test_des_round_1 (test_algorithms.TestAlgorithms.test_des_round_1) ... ok
+test_invalid_length (test_algorithms.TestAlgorithms.test_invalid_length) ... ok
+test_known_answers (test_algorithms.TestAlgorithms.test_known_answers) ... ok
+test_round_trip (test_algorithms.TestAlgorithms.test_round_trip) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.047s
+
+OK

@@ -1,0 +1,500 @@
+DES ENCRYPT: input=0123456789ABCDEF, key=133457799BBCDFF1
+PC-1 = F0CCAAF556678F; C0 = F0CCAAF; D0 = 556678F
+K01: shift=1, C=E19955F, D=AACCF1E, PC-2=1B02EFFC7072
+K02: shift=1, C=C332ABF, D=5599E3D, PC-2=79AED9DBC9E5
+K03: shift=2, C=0CCAAFF, D=56678F5, PC-2=55FC8A42CF99
+K04: shift=2, C=332ABFC, D=599E3D5, PC-2=72ADD6DB351D
+K05: shift=2, C=CCAAFF0, D=6678F55, PC-2=7CEC07EB53A8
+K06: shift=2, C=32ABFC3, D=99E3D55, PC-2=63A53E507B2F
+K07: shift=2, C=CAAFF0C, D=678F556, PC-2=EC84B7F618BC
+K08: shift=2, C=2ABFC33, D=9E3D559, PC-2=F78A3AC13BFB
+K09: shift=1, C=557F866, D=3C7AAB3, PC-2=E0DBEBEDE781
+K10: shift=2, C=55FE199, D=F1EAACC, PC-2=B1F347BA464F
+K11: shift=2, C=57F8665, D=C7AAB33, PC-2=215FD3DED386
+K12: shift=2, C=5FE1995, D=1EAACCF, PC-2=7571F59467E9
+K13: shift=2, C=7F86655, D=7AAB33C, PC-2=97C5D1FABA41
+K14: shift=2, C=FE19955, D=EAACCF1, PC-2=5F43B7F2E73A
+K15: shift=2, C=F866557, D=AAB33C7, PC-2=BF918D3D3F0A
+K16: shift=1, C=F0CCAAF, D=556678F, PC-2=CB3D8B0E17F5
+IP = CC00CCFFF0AAF0AA; L0 = CC00CCFF; R0 = F0AAF0AA
+Round 01: L_in=CC00CCFF; R_in=F0AAF0AA; K01=1B02EFFC7072
+  E(R)       = 7A15557A1555
+  E(R) XOR K = 6117BA866527
+  S1: input=011000, row=0, col=12, output=0101
+  S2: input=010001, row=1, col=8, output=1100
+  S3: input=011110, row=0, col=15, output=1000
+  S4: input=111010, row=2, col=13, output=0010
+  S5: input=100001, row=3, col=0, output=1011
+  S6: input=100110, row=2, col=3, output=0101
+  S7: input=010100, row=0, col=10, output=1001
+  S8: input=100111, row=3, col=3, output=0111
+  S-box      = 5C82B597
+  P / f      = 234AA9BB
+  L01 = F0AAF0AA; R01 = EF4A6544
+Round 02: L_in=F0AAF0AA; R_in=EF4A6544; K02=79AED9DBC9E5
+  E(R)       = 75EA5430AA09
+  E(R) XOR K = 0C448DEB63EC
+  S1: input=000011, row=1, col=1, output=1111
+  S2: input=000100, row=0, col=2, output=1000
+  S3: input=010010, row=0, col=9, output=1101
+  S4: input=001101, row=1, col=6, output=0000
+  S5: input=111010, row=2, col=13, output=0011
+  S6: input=110110, row=2, col=11, output=1010
+  S7: input=001111, row=1, col=7, output=1010
+  S8: input=101100, row=2, col=6, output=1110
+  S-box      = F8D03AAE
+  P / f      = 3CAB87A3
+  L02 = EF4A6544; R02 = CC017709
+Round 03: L_in=EF4A6544; R_in=CC017709; K03=55FC8A42CF99
+  E(R)       = E58002BAE853
+  E(R) XOR K = B07C88F827CA
+  S1: input=101100, row=2, col=6, output=0010
+  S2: input=000111, row=1, col=3, output=0111
+  S3: input=110010, row=2, col=9, output=0001
+  S4: input=001000, row=0, col=4, output=0000
+  S5: input=111110, row=2, col=15, output=1110
+  S6: input=000010, row=0, col=1, output=0001
+  S7: input=011111, row=1, col=15, output=0110
+  S8: input=001010, row=0, col=5, output=1111
+  S-box      = 2710E16F
+  P / f      = 4D166EB0
+  L03 = CC017709; R03 = A25C0BF4
+Round 04: L_in=CC017709; R_in=A25C0BF4; K04=72ADD6DB351D
+  E(R)       = 5042F8057FA9
+  E(R) XOR K = 22EF2EDE4AB4
+  S1: input=001000, row=0, col=4, output=0010
+  S2: input=101110, row=2, col=7, output=0001
+  S3: input=111100, row=2, col=14, output=1110
+  S4: input=101110, row=2, col=7, output=1101
+  S5: input=110111, row=3, col=11, output=1001
+  S6: input=100100, row=2, col=2, output=1111
+  S7: input=101010, row=2, col=5, output=0011
+  S8: input=110100, row=2, col=10, output=1010
+  S-box      = 21ED9F3A
+  P / f      = BB23774C
+  L04 = A25C0BF4; R04 = 77220045
+Round 05: L_in=A25C0BF4; R_in=77220045; K05=7CEC07EB53A8
+  E(R)       = BAE90400020A
+  E(R) XOR K = C60503EB51A2
+  S1: input=110001, row=3, col=8, output=0101
+  S2: input=100000, row=2, col=0, output=0000
+  S3: input=010100, row=0, col=10, output=1100
+  S4: input=000011, row=1, col=1, output=1000
+  S5: input=111010, row=2, col=13, output=0011
+  S6: input=110101, row=3, col=10, output=0001
+  S7: input=000110, row=0, col=3, output=1110
+  S8: input=100010, row=2, col=1, output=1011
+  S-box      = 50C831EB
+  P / f      = 2813ADC3
+  L05 = 77220045; R05 = 8A4FA637
+Round 06: L_in=77220045; R_in=8A4FA637; K06=63A53E507B2F
+  E(R)       = C5425FD0C1AF
+  E(R) XOR K = A6E76180BA80
+  S1: input=101001, row=3, col=4, output=0100
+  S2: input=101110, row=2, col=7, output=0001
+  S3: input=011101, row=1, col=14, output=1111
+  S4: input=100001, row=3, col=0, output=0011
+  S5: input=100000, row=2, col=0, output=0100
+  S6: input=001011, row=1, col=5, output=1100
+  S7: input=101010, row=2, col=5, output=0011
+  S8: input=000000, row=0, col=0, output=1101
+  S-box      = 41F34C3D
+  P / f      = 9E45CD2C
+  L06 = 8A4FA637; R06 = E967CD69
+Round 07: L_in=8A4FA637; R_in=E967CD69; K07=EC84B7F618BC
+  E(R)       = F52B0FE5AB53
+  E(R) XOR K = 19AFB813B3EF
+  S1: input=000110, row=0, col=3, output=0001
+  S2: input=011010, row=0, col=13, output=0000
+  S3: input=111110, row=2, col=15, output=0111
+  S4: input=111000, row=2, col=12, output=0101
+  S5: input=000100, row=0, col=2, output=0100
+  S6: input=111011, row=3, col=13, output=0000
+  S7: input=001111, row=1, col=7, output=1010
+  S8: input=101111, row=3, col=7, output=1101
+  S-box      = 107540AD
+  P / f      = 8C051C27
+  L07 = E967CD69; R07 = 064ABA10
+Round 08: L_in=E967CD69; R_in=064ABA10; K08=F78A3AC13BFB
+  E(R)       = 00C2555F40A0
+  E(R) XOR K = F7486F9E7B5B
+  S1: input=111101, row=3, col=14, output=0110
+  S2: input=110100, row=2, col=10, output=1100
+  S3: input=100001, row=3, col=0, output=0001
+  S4: input=101111, row=3, col=7, output=1000
+  S5: input=100111, row=3, col=3, output=0111
+  S6: input=100111, row=3, col=3, output=1100
+  S7: input=101101, row=3, col=6, output=1010
+  S8: input=011011, row=1, col=13, output=1110
+  S-box      = 6C187CAE
+  P / f      = 3C0E86F9
+  L08 = 064ABA10; R08 = D5694B90
+Round 09: L_in=064ABA10; R_in=D5694B90; K09=E0DBEBEDE781
+  E(R)       = 6AAB52A57CA1
+  E(R) XOR K = 8A70B9489B20
+  S1: input=100010, row=2, col=1, output=0001
+  S2: input=100111, row=3, col=3, output=0001
+  S3: input=000010, row=0, col=1, output=0000
+  S4: input=111001, row=3, col=12, output=1100
+  S5: input=010010, row=0, col=9, output=0101
+  S6: input=001001, row=1, col=4, output=0111
+  S7: input=101100, row=2, col=6, output=0111
+  S8: input=100000, row=2, col=0, output=0111
+  S-box      = 110C5777
+  P / f      = 22367C6A
+  L09 = D5694B90; R09 = 247CC67A
+Round 10: L_in=D5694B90; R_in=247CC67A; K10=B1F347BA464F
+  E(R)       = 1083F960C3F4
+  E(R) XOR K = A170BEDA85BB
+  S1: input=101000, row=2, col=4, output=1101
+  S2: input=010111, row=1, col=11, output=1010
+  S3: input=000010, row=0, col=1, output=0000
+  S4: input=111110, row=2, col=15, output=0100
+  S5: input=110110, row=2, col=11, output=0101
+  S6: input=101000, row=2, col=4, output=0010
+  S7: input=010110, row=0, col=11, output=0111
+  S8: input=111011, row=3, col=13, output=0101
+  S-box      = DA045275
+  P / f      = 62BC9C22
+  L10 = 247CC67A; R10 = B7D5D7B2
+Round 11: L_in=247CC67A; R_in=B7D5D7B2; K11=215FD3DED386
+  E(R)       = 5AFEABEAFDA5
+  E(R) XOR K = 7BA178342E23
+  S1: input=011110, row=0, col=15, output=0111
+  S2: input=111010, row=2, col=13, output=0011
+  S3: input=000101, row=1, col=2, output=0000
+  S4: input=111000, row=2, col=12, output=0101
+  S5: input=001101, row=1, col=6, output=1101
+  S6: input=000010, row=0, col=1, output=0001
+  S7: input=111000, row=2, col=12, output=0000
+  S8: input=100011, row=3, col=1, output=0001
+  S-box      = 7305D101
+  P / f      = E104FA02
+  L11 = B7D5D7B2; R11 = C5783C78
+Round 12: L_in=B7D5D7B2; R_in=C5783C78; K12=7571F59467E9
+  E(R)       = 60ABF01F83F1
+  E(R) XOR K = 15DA058BE418
+  S1: input=000101, row=1, col=2, output=0111
+  S2: input=011101, row=1, col=14, output=1011
+  S3: input=101000, row=2, col=4, output=1000
+  S4: input=000101, row=1, col=2, output=1011
+  S5: input=100010, row=2, col=1, output=0010
+  S6: input=111110, row=2, col=15, output=0110
+  S7: input=010000, row=0, col=8, output=0011
+  S8: input=011000, row=0, col=12, output=0101
+  S-box      = 7B8B2635
+  P / f      = C268CFEA
+  L12 = C5783C78; R12 = 75BD1858
+Round 13: L_in=C5783C78; R_in=75BD1858; K13=97C5D1FABA41
+  E(R)       = 3ABDFA8F02F0
+  E(R) XOR K = AD782B75B8B1
+  S1: input=101011, row=3, col=5, output=1001
+  S2: input=010111, row=1, col=11, output=1010
+  S3: input=100000, row=2, col=0, output=1101
+  S4: input=101011, row=3, col=5, output=0001
+  S5: input=011101, row=1, col=14, output=1000
+  S6: input=011011, row=1, col=13, output=1011
+  S7: input=100010, row=2, col=1, output=0100
+  S8: input=110001, row=3, col=8, output=1111
+  S-box      = 9AD18B4F
+  P / f      = DDBB2922
+  L13 = 75BD1858; R13 = 18C3155A
+Round 14: L_in=75BD1858; R_in=18C3155A; K14=5F43B7F2E73A
+  E(R)       = 0F16068AAAF4
+  E(R) XOR K = 5055B1784DCE
+  S1: input=010100, row=0, col=10, output=0110
+  S2: input=000101, row=1, col=2, output=0100
+  S3: input=010110, row=0, col=11, output=0111
+  S4: input=110001, row=3, col=8, output=1001
+  S5: input=011110, row=0, col=15, output=1001
+  S6: input=000100, row=0, col=2, output=1010
+  S7: input=110111, row=3, col=11, output=1111
+  S8: input=001110, row=0, col=7, output=0001
+  S-box      = 64799AF1
+  P / f      = B7318E55
+  L14 = 18C3155A; R14 = C28C960D
+Round 15: L_in=18C3155A; R_in=C28C960D; K15=BF918D3D3F0A
+  E(R)       = E054594AC05B
+  E(R) XOR K = 5FC5D477FF51
+  S1: input=010111, row=1, col=11, output=1011
+  S2: input=111100, row=2, col=14, output=0010
+  S3: input=010111, row=1, col=11, output=1110
+  S4: input=010100, row=0, col=10, output=1000
+  S5: input=011101, row=1, col=14, output=1000
+  S6: input=111111, row=3, col=15, output=1101
+  S7: input=111101, row=3, col=14, output=0011
+  S8: input=010001, row=1, col=8, output=1100
+  S-box      = B2E88D3C
+  P / f      = 5B81276E
+  L15 = C28C960D; R15 = 43423234
+Round 16: L_in=C28C960D; R_in=43423234; K16=CB3D8B0E17F5
+  E(R)       = 206A041A41A8
+  E(R) XOR K = EB578F14565D
+  S1: input=111010, row=2, col=13, output=1010
+  S2: input=110101, row=3, col=10, output=0111
+  S3: input=011110, row=0, col=15, output=1000
+  S4: input=001111, row=1, col=7, output=0011
+  S5: input=000101, row=1, col=2, output=0010
+  S6: input=000101, row=1, col=2, output=0100
+  S7: input=011001, row=1, col=12, output=0010
+  S8: input=011101, row=1, col=14, output=1001
+  S-box      = A7832429
+  P / f      = C8C04F98
+  L16 = 43423234; R16 = 0A4CD995
+R16 || L16 = 0A4CD99543423234
+FP / output = 85E813540F0AB405
+
+--- DECRYPT EXPECTED CIPHERTEXT ---
+DES DECRYPT: input=85E813540F0AB405, key=133457799BBCDFF1
+PC-1 = F0CCAAF556678F; C0 = F0CCAAF; D0 = 556678F
+K01: shift=1, C=E19955F, D=AACCF1E, PC-2=1B02EFFC7072
+K02: shift=1, C=C332ABF, D=5599E3D, PC-2=79AED9DBC9E5
+K03: shift=2, C=0CCAAFF, D=56678F5, PC-2=55FC8A42CF99
+K04: shift=2, C=332ABFC, D=599E3D5, PC-2=72ADD6DB351D
+K05: shift=2, C=CCAAFF0, D=6678F55, PC-2=7CEC07EB53A8
+K06: shift=2, C=32ABFC3, D=99E3D55, PC-2=63A53E507B2F
+K07: shift=2, C=CAAFF0C, D=678F556, PC-2=EC84B7F618BC
+K08: shift=2, C=2ABFC33, D=9E3D559, PC-2=F78A3AC13BFB
+K09: shift=1, C=557F866, D=3C7AAB3, PC-2=E0DBEBEDE781
+K10: shift=2, C=55FE199, D=F1EAACC, PC-2=B1F347BA464F
+K11: shift=2, C=57F8665, D=C7AAB33, PC-2=215FD3DED386
+K12: shift=2, C=5FE1995, D=1EAACCF, PC-2=7571F59467E9
+K13: shift=2, C=7F86655, D=7AAB33C, PC-2=97C5D1FABA41
+K14: shift=2, C=FE19955, D=EAACCF1, PC-2=5F43B7F2E73A
+K15: shift=2, C=F866557, D=AAB33C7, PC-2=BF918D3D3F0A
+K16: shift=1, C=F0CCAAF, D=556678F, PC-2=CB3D8B0E17F5
+IP = 0A4CD99543423234; L0 = 0A4CD995; R0 = 43423234
+Round 01: L_in=0A4CD995; R_in=43423234; K16=CB3D8B0E17F5
+  E(R)       = 206A041A41A8
+  E(R) XOR K = EB578F14565D
+  S1: input=111010, row=2, col=13, output=1010
+  S2: input=110101, row=3, col=10, output=0111
+  S3: input=011110, row=0, col=15, output=1000
+  S4: input=001111, row=1, col=7, output=0011
+  S5: input=000101, row=1, col=2, output=0010
+  S6: input=000101, row=1, col=2, output=0100
+  S7: input=011001, row=1, col=12, output=0010
+  S8: input=011101, row=1, col=14, output=1001
+  S-box      = A7832429
+  P / f      = C8C04F98
+  L01 = 43423234; R01 = C28C960D
+Round 02: L_in=43423234; R_in=C28C960D; K15=BF918D3D3F0A
+  E(R)       = E054594AC05B
+  E(R) XOR K = 5FC5D477FF51
+  S1: input=010111, row=1, col=11, output=1011
+  S2: input=111100, row=2, col=14, output=0010
+  S3: input=010111, row=1, col=11, output=1110
+  S4: input=010100, row=0, col=10, output=1000
+  S5: input=011101, row=1, col=14, output=1000
+  S6: input=111111, row=3, col=15, output=1101
+  S7: input=111101, row=3, col=14, output=0011
+  S8: input=010001, row=1, col=8, output=1100
+  S-box      = B2E88D3C
+  P / f      = 5B81276E
+  L02 = C28C960D; R02 = 18C3155A
+Round 03: L_in=C28C960D; R_in=18C3155A; K14=5F43B7F2E73A
+  E(R)       = 0F16068AAAF4
+  E(R) XOR K = 5055B1784DCE
+  S1: input=010100, row=0, col=10, output=0110
+  S2: input=000101, row=1, col=2, output=0100
+  S3: input=010110, row=0, col=11, output=0111
+  S4: input=110001, row=3, col=8, output=1001
+  S5: input=011110, row=0, col=15, output=1001
+  S6: input=000100, row=0, col=2, output=1010
+  S7: input=110111, row=3, col=11, output=1111
+  S8: input=001110, row=0, col=7, output=0001
+  S-box      = 64799AF1
+  P / f      = B7318E55
+  L03 = 18C3155A; R03 = 75BD1858
+Round 04: L_in=18C3155A; R_in=75BD1858; K13=97C5D1FABA41
+  E(R)       = 3ABDFA8F02F0
+  E(R) XOR K = AD782B75B8B1
+  S1: input=101011, row=3, col=5, output=1001
+  S2: input=010111, row=1, col=11, output=1010
+  S3: input=100000, row=2, col=0, output=1101
+  S4: input=101011, row=3, col=5, output=0001
+  S5: input=011101, row=1, col=14, output=1000
+  S6: input=011011, row=1, col=13, output=1011
+  S7: input=100010, row=2, col=1, output=0100
+  S8: input=110001, row=3, col=8, output=1111
+  S-box      = 9AD18B4F
+  P / f      = DDBB2922
+  L04 = 75BD1858; R04 = C5783C78
+Round 05: L_in=75BD1858; R_in=C5783C78; K12=7571F59467E9
+  E(R)       = 60ABF01F83F1
+  E(R) XOR K = 15DA058BE418
+  S1: input=000101, row=1, col=2, output=0111
+  S2: input=011101, row=1, col=14, output=1011
+  S3: input=101000, row=2, col=4, output=1000
+  S4: input=000101, row=1, col=2, output=1011
+  S5: input=100010, row=2, col=1, output=0010
+  S6: input=111110, row=2, col=15, output=0110
+  S7: input=010000, row=0, col=8, output=0011
+  S8: input=011000, row=0, col=12, output=0101
+  S-box      = 7B8B2635
+  P / f      = C268CFEA
+  L05 = C5783C78; R05 = B7D5D7B2
+Round 06: L_in=C5783C78; R_in=B7D5D7B2; K11=215FD3DED386
+  E(R)       = 5AFEABEAFDA5
+  E(R) XOR K = 7BA178342E23
+  S1: input=011110, row=0, col=15, output=0111
+  S2: input=111010, row=2, col=13, output=0011
+  S3: input=000101, row=1, col=2, output=0000
+  S4: input=111000, row=2, col=12, output=0101
+  S5: input=001101, row=1, col=6, output=1101
+  S6: input=000010, row=0, col=1, output=0001
+  S7: input=111000, row=2, col=12, output=0000
+  S8: input=100011, row=3, col=1, output=0001
+  S-box      = 7305D101
+  P / f      = E104FA02
+  L06 = B7D5D7B2; R06 = 247CC67A
+Round 07: L_in=B7D5D7B2; R_in=247CC67A; K10=B1F347BA464F
+  E(R)       = 1083F960C3F4
+  E(R) XOR K = A170BEDA85BB
+  S1: input=101000, row=2, col=4, output=1101
+  S2: input=010111, row=1, col=11, output=1010
+  S3: input=000010, row=0, col=1, output=0000
+  S4: input=111110, row=2, col=15, output=0100
+  S5: input=110110, row=2, col=11, output=0101
+  S6: input=101000, row=2, col=4, output=0010
+  S7: input=010110, row=0, col=11, output=0111
+  S8: input=111011, row=3, col=13, output=0101
+  S-box      = DA045275
+  P / f      = 62BC9C22
+  L07 = 247CC67A; R07 = D5694B90
+Round 08: L_in=247CC67A; R_in=D5694B90; K09=E0DBEBEDE781
+  E(R)       = 6AAB52A57CA1
+  E(R) XOR K = 8A70B9489B20
+  S1: input=100010, row=2, col=1, output=0001
+  S2: input=100111, row=3, col=3, output=0001
+  S3: input=000010, row=0, col=1, output=0000
+  S4: input=111001, row=3, col=12, output=1100
+  S5: input=010010, row=0, col=9, output=0101
+  S6: input=001001, row=1, col=4, output=0111
+  S7: input=101100, row=2, col=6, output=0111
+  S8: input=100000, row=2, col=0, output=0111
+  S-box      = 110C5777
+  P / f      = 22367C6A
+  L08 = D5694B90; R08 = 064ABA10
+Round 09: L_in=D5694B90; R_in=064ABA10; K08=F78A3AC13BFB
+  E(R)       = 00C2555F40A0
+  E(R) XOR K = F7486F9E7B5B
+  S1: input=111101, row=3, col=14, output=0110
+  S2: input=110100, row=2, col=10, output=1100
+  S3: input=100001, row=3, col=0, output=0001
+  S4: input=101111, row=3, col=7, output=1000
+  S5: input=100111, row=3, col=3, output=0111
+  S6: input=100111, row=3, col=3, output=1100
+  S7: input=101101, row=3, col=6, output=1010
+  S8: input=011011, row=1, col=13, output=1110
+  S-box      = 6C187CAE
+  P / f      = 3C0E86F9
+  L09 = 064ABA10; R09 = E967CD69
+Round 10: L_in=064ABA10; R_in=E967CD69; K07=EC84B7F618BC
+  E(R)       = F52B0FE5AB53
+  E(R) XOR K = 19AFB813B3EF
+  S1: input=000110, row=0, col=3, output=0001
+  S2: input=011010, row=0, col=13, output=0000
+  S3: input=111110, row=2, col=15, output=0111
+  S4: input=111000, row=2, col=12, output=0101
+  S5: input=000100, row=0, col=2, output=0100
+  S6: input=111011, row=3, col=13, output=0000
+  S7: input=001111, row=1, col=7, output=1010
+  S8: input=101111, row=3, col=7, output=1101
+  S-box      = 107540AD
+  P / f      = 8C051C27
+  L10 = E967CD69; R10 = 8A4FA637
+Round 11: L_in=E967CD69; R_in=8A4FA637; K06=63A53E507B2F
+  E(R)       = C5425FD0C1AF
+  E(R) XOR K = A6E76180BA80
+  S1: input=101001, row=3, col=4, output=0100
+  S2: input=101110, row=2, col=7, output=0001
+  S3: input=011101, row=1, col=14, output=1111
+  S4: input=100001, row=3, col=0, output=0011
+  S5: input=100000, row=2, col=0, output=0100
+  S6: input=001011, row=1, col=5, output=1100
+  S7: input=101010, row=2, col=5, output=0011
+  S8: input=000000, row=0, col=0, output=1101
+  S-box      = 41F34C3D
+  P / f      = 9E45CD2C
+  L11 = 8A4FA637; R11 = 77220045
+Round 12: L_in=8A4FA637; R_in=77220045; K05=7CEC07EB53A8
+  E(R)       = BAE90400020A
+  E(R) XOR K = C60503EB51A2
+  S1: input=110001, row=3, col=8, output=0101
+  S2: input=100000, row=2, col=0, output=0000
+  S3: input=010100, row=0, col=10, output=1100
+  S4: input=000011, row=1, col=1, output=1000
+  S5: input=111010, row=2, col=13, output=0011
+  S6: input=110101, row=3, col=10, output=0001
+  S7: input=000110, row=0, col=3, output=1110
+  S8: input=100010, row=2, col=1, output=1011
+  S-box      = 50C831EB
+  P / f      = 2813ADC3
+  L12 = 77220045; R12 = A25C0BF4
+Round 13: L_in=77220045; R_in=A25C0BF4; K04=72ADD6DB351D
+  E(R)       = 5042F8057FA9
+  E(R) XOR K = 22EF2EDE4AB4
+  S1: input=001000, row=0, col=4, output=0010
+  S2: input=101110, row=2, col=7, output=0001
+  S3: input=111100, row=2, col=14, output=1110
+  S4: input=101110, row=2, col=7, output=1101
+  S5: input=110111, row=3, col=11, output=1001
+  S6: input=100100, row=2, col=2, output=1111
+  S7: input=101010, row=2, col=5, output=0011
+  S8: input=110100, row=2, col=10, output=1010
+  S-box      = 21ED9F3A
+  P / f      = BB23774C
+  L13 = A25C0BF4; R13 = CC017709
+Round 14: L_in=A25C0BF4; R_in=CC017709; K03=55FC8A42CF99
+  E(R)       = E58002BAE853
+  E(R) XOR K = B07C88F827CA
+  S1: input=101100, row=2, col=6, output=0010
+  S2: input=000111, row=1, col=3, output=0111
+  S3: input=110010, row=2, col=9, output=0001
+  S4: input=001000, row=0, col=4, output=0000
+  S5: input=111110, row=2, col=15, output=1110
+  S6: input=000010, row=0, col=1, output=0001
+  S7: input=011111, row=1, col=15, output=0110
+  S8: input=001010, row=0, col=5, output=1111
+  S-box      = 2710E16F
+  P / f      = 4D166EB0
+  L14 = CC017709; R14 = EF4A6544
+Round 15: L_in=CC017709; R_in=EF4A6544; K02=79AED9DBC9E5
+  E(R)       = 75EA5430AA09
+  E(R) XOR K = 0C448DEB63EC
+  S1: input=000011, row=1, col=1, output=1111
+  S2: input=000100, row=0, col=2, output=1000
+  S3: input=010010, row=0, col=9, output=1101
+  S4: input=001101, row=1, col=6, output=0000
+  S5: input=111010, row=2, col=13, output=0011
+  S6: input=110110, row=2, col=11, output=1010
+  S7: input=001111, row=1, col=7, output=1010
+  S8: input=101100, row=2, col=6, output=1110
+  S-box      = F8D03AAE
+  P / f      = 3CAB87A3
+  L15 = EF4A6544; R15 = F0AAF0AA
+Round 16: L_in=EF4A6544; R_in=F0AAF0AA; K01=1B02EFFC7072
+  E(R)       = 7A15557A1555
+  E(R) XOR K = 6117BA866527
+  S1: input=011000, row=0, col=12, output=0101
+  S2: input=010001, row=1, col=8, output=1100
+  S3: input=011110, row=0, col=15, output=1000
+  S4: input=111010, row=2, col=13, output=0010
+  S5: input=100001, row=3, col=0, output=1011
+  S6: input=100110, row=2, col=3, output=0101
+  S7: input=010100, row=0, col=10, output=1001
+  S8: input=100111, row=3, col=3, output=0111
+  S-box      = 5C82B597
+  P / f      = 234AA9BB
+  L16 = F0AAF0AA; R16 = CC00CCFF
+R16 || L16 = CC00CCFFF0AAF0AA
+FP / output = 0123456789ABCDEF
+
+--- VERIFICATION ---
+Expected ciphertext: 85E813540F0AB405
+Actual ciphertext:   85E813540F0AB405
+Expected plaintext:  0123456789ABCDEF
+Actual plaintext:    0123456789ABCDEF
+Encryption: PASS
+Decryption: PASS
